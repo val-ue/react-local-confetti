@@ -1,23 +1,12 @@
-import logo from './logo.svg';
+import Confetti from "react-confetti";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <Confetti friction={0.95}/>
+      <h1>Cool! I'm working with React on my computer!</h1>
+      <p>Is this what happiness feels like?</p>
     </div>
   );
 }
